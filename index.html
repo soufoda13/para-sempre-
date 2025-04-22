@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Amor 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <audio id="musica" autoplay loop>
+      <source src="Elvis Presley - Can't Help Falling In Love (Official Audio).mp3" type="audio/mp3">
+      Seu navegador não suporta áudio.
+    </audio>
+    <button onclick="document.getElementById('musica').play()">Tocar música 🎵</button>
+    <h1 id="title"> Namoro Caue e Stephane(minha princesinha) 💑</h1>
+<h2> eterno amor!</h2>
+    <img
+  src="IMG_20250130_214306.jpg"
+  alt="para sempre estará contando! TE AMO" />
+
+    <p id="custom-message">Desde o dia mais incrível das nossas vidas 💕</p>
+
+    <div id="timer">Carregando...</div>
+
+    <script>
+      // Altere essa data para o início do namoro
+      const startDate = new Date("2025-01-23T00:00:00");
+  
+      function atualizarContador() {
+        const agora = new Date();
+        const diff = agora - startDate;
+  
+        const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutos = Math.floor((diff / (1000 * 60)) % 60);
+        const segundos = Math.floor((diff / 1000) % 60);
+  
+        const timerEl = document.getElementById("timer");
+        timerEl.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💕`;
+      }
+  
+      setInterval(atualizarContador, 1000);
+      atualizarContador();
+    </script>
+    
+    <p> simples, porém feito com muito amor... era pra eu personalizar melhor, porém, o importante é que ficará para sempre contando.
+      te amo muito, você é o amor da minha vida. 
+    </p>
+
+
+</body>
+</html>

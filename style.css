@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #161616ea;
+    color: #fffdfdd5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  p { color: rgb(255, 17, 49); }
+
+  h1 { color: rgb(113, 11, 230); }
+
+  
+  img {
+    width: 50%;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .timer div {
+    background: #0f0f0f;
+    padding: 10px;
+    border-radius: 10px;
+  }
